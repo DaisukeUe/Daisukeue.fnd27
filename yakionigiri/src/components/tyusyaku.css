@@ -1,0 +1,9 @@
+.tyusyaku{
+  position:absolute;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+  white-space:pre-wrap;
+  color: #000;
+  text-align: left;
+}

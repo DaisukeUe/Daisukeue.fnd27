@@ -1,0 +1,10 @@
+.shuku {
+    position: absolute;
+    top: 5%;
+    left: 42%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 25%;
+}

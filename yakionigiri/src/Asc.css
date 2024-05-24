@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@keyframes marquee {
+  0% {
+    transform: translateX(1000%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+ 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+.textbox {
+  background-color: aliceblue;
+  color: rgb(8, 8, 8);
+  font-size: 24px;
+  width: 20%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.App {
+  text-align: center;
+  font-size: 32px;
+  overflow: hidden;
+  color: rgb(1, 252, 34);
+}
+
+.midasi {
+  color: #fff;
+  font-size: 36px;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+  overflow: hidden;
+  font-family: Itim,cursive;
+}
+
+.titlechar {
+  position: absolute;
+  display: inline-block;
+  top: 40px;
+  left: 0;
+  margin-top: 5px;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(20deg, yellow, blue, orange, purple, green, red);
+  background-image: linear-gradient(70deg, yellow, blue, orange, purple, green, red);
+  overflow: hidden;
+}
+  
+.App-header {
+  background-color: #1b1b1b;
+  min-height: 100vh;
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(17, 17, 17);
+  overflow: hidden;
+}
+
+.myTextbox {
+  width: 300px; 
+  height: 30px;
+  font-size: 24px;  
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.button1 {
+  top: 1px;
+  font-family: 'M PLUS 1p';
+  white-space: nowrap;
+  width: 45%;
+  height: 80px;
+  color: #f8f6f6;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 4px 90px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: black;
+  position: relative;
+  box-shadow: 0 1px 0 #000;
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  }
+
+  .button1:active {
+    top: 4px;
+    box-shadow: 0 1px 0 #000;
+  }
+
+  .button1:hover {
+    animation: blink 1s linear infinite;
+  }
+
+.button2 {
+  font-family: 'M PLUS 1p';
+  white-space: nowrap;
+  width: 55%;
+  height: 80px;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: black;
+  position: relative;
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  }
+
+  .button2:active {
+    top: 4px;
+    box-shadow: 0 1px 0 #000;
+  }
+  .button2:hover {
+    animation: blink 1s linear infinite;
+  }
+
+.button3 {
+  font-family: "M PLUS 1p";
+  background-color: #f1c606cc;
+  width: 10%;
+  white-space: nowrap;
+  border: none;
+  color: rgb(230, 11, 76);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 4px 2px;
+  cursor:pointer;
+  border-radius: 4px;
+  border: black;
+  position: relative;
+  box-shadow: 0 1px 0 #000;
+  }
+
+  .button3:active {
+    top: 4px;
+    box-shadow: 0 1px 0 #000;
+  
+  }
+  .button3:hover {
+    animation: blink 1s linear infinite;
+  }
+
+.button4 {
+  background-color: #070707cc;
+  width: 10%;
+  white-space: nowrap;
+  border: none;
+  color: rgb(78, 76, 76);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: black;
+  position: relative;
+  box-shadow: 0 1px 0 #000;
+  }
+
+  .button4:active {
+    top: 4px;
+    box-shadow: 0 1px 0 #000;  
+  }
+
+   .button4:hover {
+    animation: blink 1s linear infinite;
+  }
+
+.button-container {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.sidebar {
+  font-size: 24;
+  width: 200px; 
+  height: 118%;
+  position: fixed;
+  left: -250px; 
+  top: 0;
+  background-color: #333; 
+  color: #fff; 
+  padding: 30px; 
+  transition: 0.5s ;
+}
+
+  .sidebar.visible {
+    left: 0;
+  }
+
+.sidebartext {
+  border: #070707 2px solid;
+  box-shadow: #0a0a0a 0px 0px 10px;
+  background-color: #2e2c2c;
+  display: flex;
+  left: 0;
+  text-align: left;
+  font-size: 20px;
+  color: #f8f6f6;
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(88, 88, 88), rgb(144, 146, 146));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.highlight {
+  background-color: rgb(253, 252, 255); 
+  animation: blink 1s linear infinite;
+}
+
+img {
+  width: 100%;
+  height: 13%;
+  object-position: top;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.btn,
+p.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+}
+
+p.btn-svg {
+  font-weight: 700;
+  line-height: 54px;
+  width: 204px;
+  height: 54px;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+  border-radius: 10px;
+}
+
+  p.btn-svg svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+  }
+
+  p.btn-svg svg rect {
+    -webkit-transition: all 800ms ease;
+    transition: all 800ms ease;
+    stroke: #0e0d0d;
+    stroke-width: 2;
+    stroke-dasharray: 200px, 16px;
+    stroke-dashoffset: 70px;
+  }
+
+  p.btn-svg:hover svg rect {
+    stroke-dashoffset: 568px;
+  }
+
+  p.btn-svg span {
+    font-family:"Itim";
+    color: #5108fc;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+
+.parent{
+  position: relative;
+}
+
+.footside{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+}
+
+  .footside-svg{
+    position: absolute;
+    left: 30px;
+    bottom: 100px;
+    font-weight: 700;
+    line-height: 54px;
+    width: 204px;
+    height: 180px;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%),url("/public/img/yakinigiri.jpeg");
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .footside-svg svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footside-svg rect{
+    -webkit-transition: all 800ms ease;
+    transition: all 800ms ease;
+    stroke: #0e0d0d;
+    stroke-width: 3;
+    stroke-dasharray: 200px, 50px;
+    stroke-dashoffset: 70px;
+  }
+
+  .footside:hover svg rect{
+    stroke-dashoffset: 568px;
+  }
+
+  .footside span{
+    font-family:"Itim";
+    color: #5108fc;
+  }
