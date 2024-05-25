@@ -9,6 +9,7 @@ import { upDateMenseki , onigiri, yaKu } from './feature/ascslice';
 import Modal from './Modal';
 import Tyusyaku from './components/Tyusyaku';
 import Shuku from './Shuku';
+import Onigiriimg from './components/Onigiriimg';
 
 function Asc() {
   const [sideberVisible, setSidebarVisible] = useState(false);//サイドバーのオンオフ
@@ -34,16 +35,16 @@ function Asc() {
       setInputText(text);
       let ascArt = "";
         for (let i = 0; i < text.length; i++) {
-        let subasc = Array.from({length: i+1},() => text[i]).join("");
+        let subasc = Array.from({length: i+1},() => text[i]).join("");//おにぎり本体
         ascArt += subasc + "\n";
-        dispatch(upDateMenseki(text.length*7,text.length*7));
+        dispatch(upDateMenseki(text.length*7,text.length*7));//のりの大きさ
       };
     setArtText(ascArt);
   };
    
   useEffect(() => {
     const mouseMove = (e) => {
-      setSidebarVisible(e.clientX<window.innerWidth*0.1);
+      setSidebarVisible(e.clientX<window.innerWidth*0.1);//サイドバーが出てくるカーソル位置
     };
       window.addEventListener("mousemove",mouseMove);
       return() => {
@@ -91,7 +92,7 @@ function Asc() {
         <div className = 'titlechar'>
       </div>
       <header className = "App-header">
-        <pre style = {{color: `${komeiro}`, fontWeight: "bold"}} 
+        <pre className='OnigiriImg' style = {{color: `${komeiro}`, fontWeight: "bold"}} 
             onDrop = {handleDrop} onDragOver = {handleDragOver}>
               {artText}
               {komeiro === "#d17905" && <Shuku komeiro = {komeiro}/>} 
@@ -185,9 +186,10 @@ function Asc() {
             onDragStart = {handleDragStart}
           />
         </Tyusyaku>
+        <p>画像ドラッグでも〇</p>
       </div>
       <div className = 'footside footside-svg'>
-        <svg>
+        <svg onClick = {Onigiriimg}>
           <rect  x = "2" y = "2" rx = "10" fill = "none" width = "200" height = "175">
           </rect>
         </svg>
