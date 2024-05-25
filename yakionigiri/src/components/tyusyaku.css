@@ -1,9 +1,13 @@
 .tyusyaku{
   position:absolute;
-  background-color: aliceblue;
   padding: 5px;
   border-radius: 5px;
   white-space:pre-wrap;
-  color: #000;
+  color: hsl(46, 97%, 46%);
   text-align: left;
+  box-shadow: 0 1px 0 #000;
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(214, 178, 16), rgb(255, 197, 6));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }

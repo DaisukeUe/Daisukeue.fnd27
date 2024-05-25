@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
 @keyframes marquee {
   0% {
     transform: translateX(1000%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
  
 }
@@ -23,6 +24,12 @@
   0% {opacity: 1;}
   50% {opacity: 0.5;}
   100% {opacity: 1;}
+}
+
+@keyframes AnimationTitle {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .textbox {
@@ -216,6 +223,27 @@
 .button-container {
   display: flex;
   justify-content: space-between; 
+}
+
+.sidemenyu{
+  animation: AnimationTitle 2s ease infinite;
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(to right, #45eb04f1, #dfee08, #fdc304);
+  background-size: 200% 100%;
+  background-clip: text;
+  font: bold 24px 'Space Grotesk', sans-serif;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 24;
+  width: 200px; 
+  height: 2px;
+  text-align: center;
+  position: absolute;
+  left: 0px; 
+  top:-15px;
+  padding: 27px; 
+  z-index: 1;
+  border-radius: 10px;
 }
 
 .sidebar {

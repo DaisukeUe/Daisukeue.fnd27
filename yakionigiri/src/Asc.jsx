@@ -37,14 +37,14 @@ function Asc() {
         for (let i = 0; i < text.length; i++) {
         let subasc = Array.from({length: i+1},() => text[i]).join("");//おにぎり本体
         ascArt += subasc + "\n";
-        dispatch(upDateMenseki(text.length*7,text.length*7));//のりの大きさ
+        dispatch(upDateMenseki(text.length * 7,text.length * 7));//のりの大きさ
       };
     setArtText(ascArt);
   };
    
   useEffect(() => {
     const mouseMove = (e) => {
-      setSidebarVisible(e.clientX<window.innerWidth*0.1);//サイドバーが出てくるカーソル位置
+      setSidebarVisible(e.clientX < window.innerWidth * 0.1);//サイドバーが出てくるカーソル位置
     };
       window.addEventListener("mousemove",mouseMove);
       return() => {
@@ -144,8 +144,8 @@ function Asc() {
           </svg>
           <span>Reset！</span>     
           </p>
+          <div className = 'sidemenyu'>≫サイドメニュー</div>
         <div className = {`sidebar ${sideberVisible ? "visible" : ""}`}>
-          <p className = 'sidebartext'>≫サイドメニュー</p>
           <p className = 'sidebartext' 
             onMouseOver = {() => light("onigiri")} 
             onMouseOut = {() => relight("onigiri")}>
