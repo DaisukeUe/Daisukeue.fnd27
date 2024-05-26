@@ -7,7 +7,7 @@ const Tyushaku = ({ children, text }) => {
       <div onMouseOver = {() => setVisible(true)} 
            onMouseOut = {() => setVisible(false)}>
         {children}
-        {visible && <div className="tyusyaku">{text}</div>}
+        {visible && <div className = "tyusyaku">{text}</div>}
       </div>
     );
   };

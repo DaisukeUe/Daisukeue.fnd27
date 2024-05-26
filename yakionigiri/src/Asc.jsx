@@ -11,7 +11,7 @@ import Tyusyaku from './components/Tyusyaku';
 import Shuku from './Shuku';
 import Onigiriimg from './components/Onigiriimg';
 
-function Asc() {
+const Asc = () => {
   const [sideberVisible, setSidebarVisible] = useState(false);//サイドバーのオンオフ
   const [inputText, setInputText] = useState('');//入力文字
   const [artText, setArtText] = useState('');//おにぎり本体
@@ -98,7 +98,7 @@ function Asc() {
               {komeiro === "#d17905" && <Shuku komeiro = {komeiro}/>} 
         </pre>
       {onNori && <Modal menseki = {menseki}/>}
-      <Tyusyaku text="おにぎりを作るための文字を入力しましょう。全角と半角の組み合わせで色々な形が作れます。">
+      <Tyusyaku text = "おにぎりを作るための文字を入力しましょう。全角と半角の組み合わせで色々な形が作れます。">
         <input 
           type = "text" 
           className = "myTextbox" 
@@ -120,7 +120,7 @@ function Asc() {
           <button 
             className = 'button2' 
             id = "nori" 
-            onClick = {()=>{dispatch(onigiri());
+            onClick = {() => {dispatch(onigiri());
             document.getElementById('se1').play();}}>
               {nori}
           </button>

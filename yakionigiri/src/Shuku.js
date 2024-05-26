@@ -1,6 +1,6 @@
 import React from 'react'
 import './Shuku.css';
-import { useEffect ,useState} from 'react';
+import { useEffect , useState} from 'react';
 import { useSelector } from 'react-redux';
 
 
@@ -15,10 +15,10 @@ const [isShown, setIsShown] = useState(true);
 }, [isShown]);
     
   return (
-    <div className='shuku'>
-      <img src="/img/suzu.gif" alt="description of gif" />   
-        <audio id="se5" preload="auto">
-          <source src="/bgm/hakushu.mp3" type="audio/mpeg"/>
+    <div className = 'shuku'>
+      <img src = "/img/suzu.gif" alt = "description of gif" />   
+        <audio id = "se5" preload = "auto">
+          <source src = "/bgm/hakushu.mp3" type = "audio/mpeg"/>
         </audio>
       </div>
     );

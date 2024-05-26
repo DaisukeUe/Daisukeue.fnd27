@@ -7,7 +7,7 @@ const {tate,yoko} = menseki;
 
 
   return (
-    <div style={{ width: `${width}px`,
+    <div style = {{ width: `${width}px`,
                   height: `${height}px`,
                   backgroundColor: "black",
                   position:'absolute',
@@ -20,8 +20,8 @@ const {tate,yoko} = menseki;
                   fontSize: "30px",
                   borderRadius: "10px",
                  }}>
-                  <img src="/img/nori.jpg" alt="" 
-                       style={{
+                  <img src = "/img/nori.jpg" alt = "" 
+                       style = {{
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
