@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ddcc9a85.css",
+    "main.js": "/static/js/main.dacb2f6f.js",
+    "static/media/yakinigiri.jpeg": "/static/media/yakinigiri.0548fe415918b71da447.jpeg",
+    "index.html": "/index.html",
+    "main.ddcc9a85.css.map": "/static/css/main.ddcc9a85.css.map",
+    "main.dacb2f6f.js.map": "/static/js/main.dacb2f6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddcc9a85.css",
+    "static/js/main.dacb2f6f.js"
+  ]
+}
