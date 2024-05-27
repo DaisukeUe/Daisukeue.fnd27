@@ -1,5 +1,4 @@
 {
-  "homepage": "https://DaisukeUe.github.io/Daisukeue.fnd27/",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -24,9 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "rm": "rm -rf docs",
-    "mv": "mv build docs",
-    "git": "git add . && git commit && git push origin master",
-    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+    "mv": "mv build docs"
   },
   "eslintConfig": {
     "extends": [
